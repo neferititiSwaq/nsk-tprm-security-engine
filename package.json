@@ -1,0 +1,26 @@
+{
+  "name": "nsk-tprm-security-engine",
+  "version": "1.0.0",
+  "description": "On-Premise Zero-Middleware Third-Party Risk Management (TPRM) Security & Audit Core for FNB Hackathon 2026",
+  "main": "verify_hash.js",
+  "scripts": {
+    "test": "node verify_hash.js",
+    "simulate": "python3 tprm_engine.py"
+  },
+  "keywords": [
+    "tprm",
+    "fnb-hackathon-2026",
+    "zero-middleware",
+    "digital-public-infrastructure",
+    "arm64",
+    "sovereignty",
+    "popia",
+    "south-africa"
+  ],
+  "author": "Maria Thembi Mathibela (Nyoni Sakha Kumbi)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "lucide-react": ">=0.280.0"
+  }
+}
