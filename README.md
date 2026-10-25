@@ -99,14 +99,25 @@ Execution trace modeled on batch `NSK-BATCH-99284` (1,000 host-community records
 
 ---
 
-## 6. How Judges Can Verify the Engine
+## 6. How Judges Can Verify the Engine (Includes Judge Demo Credentials)
 
-### Option A: Interactive Web Console (Recommended)
+### Option A: Interactive Web Console (Recommended — Zero Setup)
 Visit the live interactive console directly on our production platform:
-👉 **[https://devpreneur-hub.vercel.app/tprm-audit](https://devpreneur-hub.vercel.app/tprm-audit)**
-* Click **"Run Live Batch Simulation"** to execute the live 1,000-record verification test in real time.
+👉 **[https://devpreneur-hub.vercel.app/tprm-audit](https://devpreneur-hub.vercel.app/tprm-audit)** and **[https://devpreneur-hub.vercel.app/enterprise](https://devpreneur-hub.vercel.app/enterprise)**
+* Click **"Run Live Batch Simulation"** on `/tprm-audit` to execute the live 1,000-record verification test in real time.
+* Click **"Spatial Commute Matrix"** on `/enterprise` to launch the live Google Maps eMalahleni/Middelburg mining corridor verification modal.
 * Inspect the **TPRM Master Matrix**, **ARM64 Benchmarks**, and **POPIA Statement**.
-* Copy and verify the SHA-256 seal.
+
+### Judge Demo Account & Login Details
+If adjudicators wish to test authenticated vault access at **[https://devpreneur-hub.vercel.app/signin](https://devpreneur-hub.vercel.app/signin)**:
+* **Judge Demo Email / ID:** `judge@fnbhackathon.co.za`
+* **Judge Demo Password:** `NSK-Sovereign-2026!`
+* *(Tip: We also placed a **"1-Click Judge Demo Login"** button right on the `/signin` page for instant zero-typing access!)*
+
+<a id="demo-video"></a>
+### Official < 90-Second Demo Video & Presentation Deck
+* 📄 **Official Presentation Deck (PDF):** [`docs/NSK_FNB_Hackathon_2026_Deck.pdf`](./docs/NSK_FNB_Hackathon_2026_Deck.pdf)
+* 🎬 **Official Demo Video (<90s):** Included in repository & Sonke submission portal.
 
 ### Option B: Run the Reference Engine Locally (Zero External Dependencies)
 Clone this repository and run the standalone Python audit harness:
