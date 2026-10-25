@@ -371,4 +371,4 @@ We seek <strong>R30,000 in catalytic capital</strong> to procure and deploy our 
 
 **Maria Thembi Mathibela** — *Founder, CEO & Systems Architect*  
 **Nyoni Sakha Kumbi (Pty) Ltd t/a NSK Devpreneur Hub** | eMalahleni, Mpumalanga  
-🌐 [devpreneur-hub.vercel.app/tprm-audit](https://devpreneur-hub.vercel.app/tprm-audit) | 📧 *thembisilemathibela2010@gmail.com*
+🌐 [devpreneur-hub.vercel.app/tprm-audit](https://devpreneur-hub.vercel.app/tprm-audit) | 📧 *NeferititiSwaq@nskdevpreneur-hub.com*
