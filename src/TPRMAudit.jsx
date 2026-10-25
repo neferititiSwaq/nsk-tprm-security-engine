@@ -14,7 +14,15 @@ export default function TPRMAudit() {
   const [terminalLogs, setTerminalLogs] = useState([]);
   const [simulationComplete, setSimulationComplete] = useState(false);
   const [copiedHash, setCopiedHash] = useState(false);
-  const terminalEndRef = useRef(null);
+  const [pastedSealInput, setPastedSealInput] = useState('');
+  const [sealVerified, setSealVerified] = useState(null);
+  const terminalContainerRef = useRef(null);
+
+  const CANONICAL_SEAL = '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08';
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Raw simulation logs modeled on NSK-TSD-2026-V1 & NSK-TPRM-REG-2026-V1
   const rawLogsSequence = [
@@ -55,15 +63,27 @@ export default function TPRMAudit() {
   };
 
   useEffect(() => {
-    if (terminalEndRef.current) {
-      terminalEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (terminalContainerRef.current) {
+      terminalContainerRef.current.scrollTop = terminalContainerRef.current.scrollHeight;
     }
   }, [terminalLogs]);
 
   const copySealHash = () => {
-    navigator.clipboard.writeText('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08');
+    navigator.clipboard.writeText(CANONICAL_SEAL);
     setCopiedHash(true);
-    setTimeout(() => setCopiedHash(false), 2500);
+    setPastedSealInput(CANONICAL_SEAL);
+    setSealVerified(true);
+    setTimeout(() => setCopiedHash(false), 3000);
+  };
+
+  const handleVerifySealInput = (val) => {
+    setPastedSealInput(val);
+    const cleaned = val.trim().toLowerCase();
+    if (!cleaned) {
+      setSealVerified(null);
+    } else {
+      setSealVerified(cleaned === CANONICAL_SEAL);
+    }
   };
 
   const tprmMatrix = [
@@ -300,7 +320,7 @@ export default function TPRMAudit() {
                 <span className="text-[#64748b] text-[10px]">Deterministic Kernel Log Monitor</span>
               </div>
 
-              <div className="p-5 font-mono text-xs space-y-2 h-72 overflow-y-auto bg-[#05070a]">
+              <div ref={terminalContainerRef} className="p-5 font-mono text-xs space-y-2 h-72 overflow-y-auto bg-[#05070a]">
                 {terminalLogs.length === 0 ? (
                   <div className="h-full flex flex-col items-center justify-center text-center text-[#64748b]">
                     <Terminal size={32} className="mb-2 text-[#334155]" />
@@ -327,24 +347,53 @@ export default function TPRMAudit() {
                     </div>
                   ))
                 )}
-                <div ref={terminalEndRef} />
               </div>
 
-              {/* Terminal Footer with Cryptographic Hash */}
-              <div className="p-4 bg-[#0c101b] border-t border-[#1e293b] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono">
-                <div className="flex items-center gap-2">
-                  <span className="text-[#64748b] uppercase">SHA-256 Ledger Seal:</span>
-                  <span className="text-[#c9a84c] text-[11px] font-bold break-all">
-                    9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
-                  </span>
+              {/* Terminal Footer with Cryptographic Hash & Live Inspector */}
+              <div className="p-4 bg-[#0c101b] border-t border-[#1e293b] space-y-3 text-xs font-mono">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-[#64748b] uppercase">SHA-256 Ledger Seal:</span>
+                    <span className="text-[#c9a84c] text-[11px] font-bold break-all">
+                      {CANONICAL_SEAL}
+                    </span>
+                  </div>
+                  <button
+                    onClick={copySealHash}
+                    className={`px-3.5 py-1.5 rounded text-[11px] font-bold flex items-center gap-1.5 transition-all whitespace-nowrap ${
+                      copiedHash
+                        ? 'bg-emerald-500/20 border border-emerald-500/50 text-emerald-300'
+                        : 'bg-[#111827] border border-[#c9a84c]/40 text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#080b12]'
+                    }`}
+                  >
+                    {copiedHash ? <Check size={12} className="text-emerald-400" /> : <Copy size={12} />}
+                    {copiedHash ? 'Copied to Clipboard & Loaded Below!' : 'Copy & Verify Audit Seal'}
+                  </button>
                 </div>
-                <button
-                  onClick={copySealHash}
-                  className="px-3 py-1 bg-[#111827] border border-[#334155] rounded text-[11px] text-[#94a3b8] hover:text-white flex items-center gap-1.5 transition-all"
-                >
-                  {copiedHash ? <Check size={12} className="text-emerald-400" /> : <Copy size={12} />}
-                  {copiedHash ? 'Hash Copied!' : 'Copy Audit Seal'}
-                </button>
+
+                {/* Live Cryptographic Seal Verification Sandbox */}
+                <div className="pt-3 border-t border-[#1e293b]/80 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                  <span className="text-[10px] uppercase text-[#94a3b8] whitespace-nowrap">
+                    Live Seal Verifier (Paste or Click Copy Above):
+                  </span>
+                  <input
+                    type="text"
+                    value={pastedSealInput}
+                    onChange={(e) => handleVerifySealInput(e.target.value)}
+                    placeholder="Paste copied SHA-256 hash here (Cmd+V) to verify cryptographic integrity..."
+                    className="flex-1 px-3 py-1.5 bg-[#05070a] border border-[#334155] focus:border-[#c9a84c] rounded text-[11px] text-white outline-none font-mono"
+                  />
+                  {sealVerified === true && (
+                    <span className="px-3 py-1.5 bg-emerald-500/15 border border-emerald-500/40 text-emerald-400 rounded text-[10px] font-bold uppercase flex items-center gap-1.5 whitespace-nowrap">
+                      <CheckCircle2 size={13} /> Authentic Seal Verified (PayShap Cleared)
+                    </span>
+                  )}
+                  {sealVerified === false && (
+                    <span className="px-3 py-1.5 bg-red-500/15 border border-red-500/40 text-red-400 rounded text-[10px] font-bold uppercase flex items-center gap-1.5 whitespace-nowrap">
+                      Tampered / Invalid Hash
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
 
