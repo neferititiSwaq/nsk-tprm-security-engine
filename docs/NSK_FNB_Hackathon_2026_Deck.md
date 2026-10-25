@@ -270,33 +270,61 @@ Sindi submits PDFs ➔ 5 Disconnected Portals ➔ 3-Week Manual Vetting ➔ Dela
 
 ---
 
-## **7. Competition, Revenue Model, Impact & Scalability**
-### Sustainable B2B Infrastructure Built for Pan-African Scale
+## **7. Competition, Commercialization & Scalability**
+### Productized Infrastructure Pillars & 30-Day Low-Friction Pilot Hook
 
 <div class="grid2">
 <div class="card">
-<strong>⚔️ Competitive Advantage</strong><br/>
-Unlike foreign cloud ERPs (SAP Ariba, Coupa) or manual paper consultants that cost millions in USD/EUR licenses and take 3–4 weeks, <strong>NSK is 100% locally owned, zero-middleware, runs offline/on-premise at <15W during Stage 6 load-shedding, and clears vendors in 14ms.</strong><br/><br/>
-<strong>💰 Revenue Model & Sustainability</strong><br/>
-1. <strong>B2B Enterprise Cluster Retainers:</strong> <strong>R95,000/month</strong> per mining house or corporate procurement cluster.<br/>
-2. <strong>FNB PayShap Transaction Fee-Share:</strong> Micro-commission (0.25%–0.5%) on instant verified supplier disbursements.<br/>
-3. <strong>Turnkey Edge Node Hardware Kits:</strong> Pre-configured ARM64 clusters for remote industrial & municipal sites.
+<strong>⚔️ Competitive Advantage vs. Foreign Cloud ERPs</strong><br/>
+Unlike foreign cloud ERPs (SAP Ariba, Coupa) that cost millions in USD/EUR licenses and take 3–4 weeks, <strong>NSK is 100% locally owned, zero-middleware, runs on-premise at <15W during Stage 6 load-shedding, and clears vendors in 14ms.</strong><br/><br/>
+<strong>🚀 Low-Friction Hook: 30-Day Automated Pipeline Pilot</strong><br/>
+We feed a mining house's legacy quarterly spreadsheet data through our local edge nodes to uncover every unverified vendor compliance gap and GIS spatial error in <strong>4 hours instead of 3 weeks</strong>.
 </div>
 
 <div class="card card-green">
-<strong>🌍 Socio-Economic Impact & Scalability</strong><br/>
-• <strong>Township Youth & SMME Inclusion:</strong> Eliminates the 21-day verification barrier, unlocking immediate working capital for township youth and women-owned suppliers.<br/>
-• <strong>Environmental Sustainability:</strong> 10W–15W ARM64 edge nodes reduce data-center energy footprint by >90% and run seamlessly on solar/inverter power.<br/>
-• <strong>Scalability Roadmap:</strong><br/>
-  ├─ <em>Phase 1 (Q4 2026):</em> Mpumalanga Mining Corridor (eMalahleni, Middelburg, Secunda).<br/>
-  ├─ <em>Phase 2 (2027):</em> Limpopo & North West Platinum Belt + SA Municipalities (SPLUMA).<br/>
-  └─ <em>Phase 3 (2028):</em> SADC Cross-Border Industrial Corridors (Zambia, DRC, Botswana).
+<strong>💰 Productized Revenue Pillars & SADC Scalability</strong><br/>
+1. <strong>The SLP Audit Shield (LaunchSense):</strong> <strong>R95,000/month</strong> recurring retainer for immutable DMRE Social & Labour Plan (SLP) and supplier compliance dashboards.<br/>
+2. <strong>The Spatial Grid Gateway (The Foundry):</strong> Transactional fee per automated SPLUMA/REDZ municipal & green-energy grid coordinate screening.<br/>
+3. <strong>Enterprise Database Rails (The Forge) + FNB PayShap Fee-Share:</strong> On-premise integration fee + micro-commission on cleared PayShap payouts.<br/>
+• <strong>Scale:</strong> Phase 1: Mpumalanga Mines ➔ Phase 2: SA Municipalities & Platinum Belt ➔ Phase 3: SADC Corridors.
 </div>
 </div>
 
 ---
 
-## **8. Submission Checklist: Demo Video, Live URLs & Judge Login**
+## **8. The Strategic Moat: Youth Workforce & Cross-Subsidization**
+### Corporate Retainers Directly Fund Grassroots ARM64 Hardware Cohorts
+
+```
+             [ COMMERCIALLY FUNDED LAYER: Mining Houses / FNB / Public Agencies ]
+         Pays Monthly Retainer ▼                               Pays Integration Fee ▼
+   ┌─────────────────────────────────┐                  ┌─────────────────────────────────┐
+   │ SLP Audit Shield (LaunchSense)  │                  │ Enterprise Database Rail (Forge)│
+   └─────────────────┬───────────────┘                  └────────────────┬────────────────┘
+                     └─────────────────────────┬─────────────────────────┘
+                                               │ Cross-Subsidizes (B-BBEE / SLP / CSI Double-Win)
+                                               ▼
+             [ SOCIAL IMPACT LAYER: The Forge Sandbox Rail (Free Local Youth Cohorts) ]
+```
+
+<div class="grid3">
+<div class="card">
+<strong>🛠️ 1. Assembly & Thermal Rig</strong><br/>
+Local youth trained on ESD static safeguarding, Rockchip RK3588 thermal paste/heatsink application, and dual 2.5G PoE+ / NVMe I/O wiring.
+</div>
+<div class="card card-green">
+<strong>💿 2. Golden Image & SHA-256</strong><br/>
+Cohorts flash pre-hardened Ubuntu Server ARM64 images via <code>dd</code> / Etcher onto eMMC modules and verify cryptographic SHA-256 checksums.
+</div>
+<div class="card card-blue">
+<strong>⚡ 3. 5-Min Edge Recovery SLA</strong><br/>
+Equipped with USB-to-TTL UART GPIO serial debuggers (Minicom) and LED boot diagnostics to execute 5-minute hot-swap node recovery on site.
+</div>
+</div>
+
+---
+
+## **9. Submission Checklist: Demo Video, Live URLs & Judge Login**
 ### Everything Adjudicators Need to Verify NSK in Under 90 Seconds
 
 <div class="grid2">
@@ -325,7 +353,7 @@ Unlike foreign cloud ERPs (SAP Ariba, Coupa) or manual paper consultants that co
 ---
 
 <!-- _class: lead -->
-# **9. The Ask & Closing Vision**
+# **10. The Ask & Closing Vision**
 ### Partnering with FNB to Power Sovereign African Supply Chains
 
 <div class="grid2" style="text-align:left; margin-top:20px;">
