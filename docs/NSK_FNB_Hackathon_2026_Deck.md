@@ -345,8 +345,8 @@ Equipped with USB-to-TTL UART GPIO serial debuggers (Minicom) and LED boot diagn
 • <strong>Demo Account Email / ID:</strong> <code>judge@fnbhackathon.co.za</code><br/>
 • <strong>Demo Account Password:</strong> <code>NSK-Sovereign-2026!</code><br/>
 • <em>Includes a <strong>"1-Click Judge Demo Login"</strong> button right on the Sign-In page!</em><br/><br/>
-<strong>🎬 Official < 90s Demo Video Link:</strong><br/>
-👉 <a href="https://github.com/neferititiSwaq/nsk-tprm-security-engine#demo-video"><code>Watch <90s Demo Video (Link on GitHub & Deck)</code></a>
+<strong>🎬 Official Demo Video Link (Direct Stream & Download):</strong><br/>
+👉 <a href="https://devpreneur-hub.vercel.app/NSK_FNB_Hackathon_Demo_Video.mp4"><code>https://devpreneur-hub.vercel.app/NSK_FNB_Hackathon_Demo_Video.mp4</code></a>
 </div>
 </div>
 

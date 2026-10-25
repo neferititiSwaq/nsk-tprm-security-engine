@@ -115,9 +115,9 @@ If adjudicators wish to test authenticated vault access at **[https://devpreneur
 * *(Tip: We also placed a **"1-Click Judge Demo Login"** button right on the `/signin` page for instant zero-typing access!)*
 
 <a id="demo-video"></a>
-### Official < 90-Second Demo Video & Presentation Deck
+### Official Demo Video & Presentation Deck
 * 📄 **Official Presentation Deck (PDF):** [`docs/NSK_FNB_Hackathon_2026_Deck.pdf`](./docs/NSK_FNB_Hackathon_2026_Deck.pdf)
-* 🎬 **Official Demo Video (<90s):** Included in repository & Sonke submission portal.
+* 🎬 **Official Demo Video (Direct Stream):** **[`https://devpreneur-hub.vercel.app/NSK_FNB_Hackathon_Demo_Video.mp4`](https://devpreneur-hub.vercel.app/NSK_FNB_Hackathon_Demo_Video.mp4)** (also saved in [`docs/NSK_FNB_Hackathon_Demo_Video.mp4`](./docs/NSK_FNB_Hackathon_Demo_Video.mp4)).
 
 ### Option B: Run the Reference Engine Locally (Zero External Dependencies)
 Clone this repository and run the standalone Python audit harness:

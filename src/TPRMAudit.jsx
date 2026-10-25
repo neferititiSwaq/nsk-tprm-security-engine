@@ -196,6 +196,14 @@ export default function TPRMAudit() {
               &larr; Enterprise Landing
             </button>
             <a
+              href="/NSK_FNB_Hackathon_Demo_Video.mp4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-xs font-mono font-bold uppercase bg-emerald-500/15 border border-emerald-500/40 text-emerald-400 rounded hover:bg-emerald-500/25 transition-all inline-flex items-center gap-1.5"
+            >
+              🎬 Watch Demo Video <ExternalLink size={12} />
+            </a>
+            <a
               href="https://www.backabuddy.co.za/campaign/digital-public-infrastructure"
               target="_blank"
               rel="noopener noreferrer"
