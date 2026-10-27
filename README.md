@@ -7,6 +7,7 @@
 ---
 
 [![Live Audit Console](https://img.shields.io/badge/Live_Audit_Console-devpreneur--hub.vercel.app%2Ftprm--audit-c9a84c?style=for-the-badge&logo=vercel)](https://devpreneur-hub.vercel.app/tprm-audit)
+[![Live Google Cloud Run Pipeline](https://img.shields.io/badge/Cloud_Run_Pipeline-document--processor_(europe--west1)-4285F4?style=for-the-badge&logo=googlecloud)](https://document-processor-493269616772.europe-west1.run.app)
 [![Enterprise Platform](https://img.shields.io/badge/Enterprise_Platform-Live_Production-10b981?style=for-the-badge&logo=googlecloud)](https://devpreneur-hub.vercel.app/enterprise)
 [![Maps Geospatial Grounding](https://img.shields.io/badge/Google_Maps-Spatial_Routing_Matrix-4285F4?style=for-the-badge&logo=googlemaps)](https://devpreneur-hub.vercel.app/maps/commutes.html)
 [![Hardware Profile](https://img.shields.io/badge/Hardware-Rockchip_RK3588_ARM64-6366f1?style=for-the-badge)](https://www.backabuddy.co.za/campaign/digital-public-infrastructure)
@@ -131,6 +132,12 @@ python3 tprm_engine.py
 # Verify the cryptographic seal using Node.js
 node verify_hash.js
 ```
+
+### Option C: Live Google Cloud Run + BigQuery Serverless Pipeline (Google for Startups Immersion)
+* 🌐 **Live Cloud Run Interactive Dashboard (`europe-west1`):** **[`https://document-processor-493269616772.europe-west1.run.app`](https://document-processor-493269616772.europe-west1.run.app)**
+* 📂 **Serverless Pipeline Codebase:** [`./cloud-run-document-pipeline/`](./cloud-run-document-pipeline/)
+* 📐 **Architectural Spec & Mermaid State Diagram:** [`./docs/plans/2026-10-27-serverless-cloudrun-tprm-pipeline-spec.md`](./docs/plans/2026-10-27-serverless-cloudrun-tprm-pipeline-spec.md)
+* 🗄️ **GCP Telemetry Target:** Project `antigravity-camp-nsk` (`493269616772`) $\rightarrow$ Bucket `gs://antigravity-camp-nsk-document-ingest` $\rightarrow$ BigQuery `antigravity-camp-nsk.document_processing.document_metadata`
 
 ---
 
