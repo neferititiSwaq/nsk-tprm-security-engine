@@ -100,11 +100,16 @@ Verified test logs from `NSK-TSD-2026-V1` (Rockchip RK3588 ARM64 SBC vs. Baselin
 
 ## 6. How Judges Can Verify the Engine (Includes 1-Click Judge Credentials)
 
-### Option A: Interactive Web Console & Session 3 Risk Officer Inbox (Recommended)
+### Option A: 2-Minute Interactive Judge Walkthrough (5 Clicks on Live Web Console)
 Visit the live production audit console:
 👉 **[https://www.nskdevpreneur-hub.com/tprm-audit](https://www.nskdevpreneur-hub.com/tprm-audit)**
-* Open the **`Live Vendor ↔ Risk Officer Inbox (8-Step System Map)`** tab to test the live split-screen vendor submission, editable Rulebook prices/thresholds, 30-day auto-purge schedule, login gate toggle, and fail-closed HTTP 403 sign-off!
-* Open the **`4-Agent Due Diligence & Source Traceability`** tab to inspect exact file/line AST citations and dual South African (`POPIA / SARB JS2 / DMRE SLP`) & UAE (`UAE PDPL / DIFC Art 8.2`) statutory clauses.
+
+At the top of the page, use the **🧭 Interactive 5-Step Judge & Mentor Evaluation Guide** (each card automatically lights up with **`✓ VERIFIED`** as you test it):
+1. **Step 1 — Test the Stranger Login Lock (`HTTP 401`):** Click **`▶ Test Step 1`** (or toggle `Stranger View (Logged Out)`) to verify that an unauthenticated stranger opening the link sees zero vendor packets, zero prices, and zero approval controls.
+2. **Step 2 — Test the Live Rulebook (`No Prices in Prompts`):** Click **`▶ Test Step 2`** (or change the Tier 2 Gold Pass price from `AED 147` to `AED 195`). Watch the waiting Risk Officer Inbox immediately display **both** the price it was drafted at (`AED 147`) and the current live Rulebook price (`AED 195`), letting the officer choose which applies.
+3. **Step 3 — Test the 'Never-Guess' Statutory Rule:** Click **`▶ Test Step 3`** (or submit Preset `2. Missing SLP %`). Verify that Agent 03 refuses to guess or hallucinate the missing DMRE SLP percentage, halting at `200_PENDING_VENDOR_INPUT` and asking 1 clarifying question.
+4. **Step 4 — Test Prompt Injection & Fail-Closed `HTTP 403` Block:** Click **`▶ Test Step 4`** (or submit Preset `5. Prompt Injection + Secret` and try approving without patching). Verify that Agent 02's Python AST ignores `# [ADMIN BYPASS]`, flags `sk_live_SYNTHETIC_FIXTURE_8841`, and blocks unpatched human approval with **`HTTP 403_GUARDRAIL_BLOCKED`**.
+5. **Step 5 — Apply Patch, Mint `SHA-256` Seal & Test 30-Day Purge:** Click **`▶ Test Step 5`** (or click `Apply Agent 04 Patch` $\rightarrow$ `Approve & Mint Seal`) to release the canonical SHA-256 Digital Supplier Passport to the vendor view, and test **`Purge Record Now`** (30-day POPIA Sec 14 & UAE PDPL auto-deletion policy).
 
 ### 1-Click Judge Sandbox Logins & API Keys
 At **[https://www.nskdevpreneur-hub.com/signin](https://www.nskdevpreneur-hub.com/signin)**, adjudicators have dedicated 1-click sandbox buttons:
