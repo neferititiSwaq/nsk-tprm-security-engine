@@ -3,7 +3,7 @@
 NSK TPRM Security Core - Reference Verification Engine
 ======================================================
 Project: Nyoni Sakha Kumbi (NSK) Devpreneur Hub
-Track: FNB App of the Year Hackathon 2026 / Google for Startups Immersion
+Track: FNB App of the Year Hackathon 2026 & Dubai Create AI Agents Championship
 Specification: NSK-TPRM-REG-2026-V1 & NSK-TSD-2026-V1
 Classification: Restricted / Engineering Audit Reference
 
