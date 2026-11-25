@@ -7,7 +7,7 @@
 ---
 
 [![Live Audit Console](https://img.shields.io/badge/Live_Audit_Console-www.nskdevpreneur--hub.com%2Ftprm--audit-c9a84c?style=for-the-badge&logo=vercel)](https://www.nskdevpreneur-hub.com/tprm-audit)
-[![Live API Gateway](https://img.shields.io/badge/Production_API_Gateway-api.nskdevpreneur--hub.com-7d2bb0?style=for-the-badge&logo=fastapi)](https://api.nskdevpreneur-hub.com/api/v1/forge/contracts?corridor=uae_africa)
+[![Live API Gateway](https://img.shields.io/badge/Production_API_Gateway-api.nskdevpreneur--hub.com-7d2bb0?style=for-the-badge&logo=fastapi)](https://api.nskdevpreneur-hub.com/api/v1/forge/contracts?corridor=uae_africa&mode=sandbox)
 [![Live Google Cloud Run Pipeline](https://img.shields.io/badge/Cloud_Run_Pipeline-nsk--automation--server_(europe--west2)-4285F4?style=for-the-badge&logo=googlecloud)](https://www.nskdevpreneur-hub.com/tprm-audit)
 [![Enterprise Platform](https://img.shields.io/badge/Enterprise_Platform-Live_Production-10b981?style=for-the-badge&logo=googlecloud)](https://www.nskdevpreneur-hub.com/enterprise)
 [![Hardware Profile](https://img.shields.io/badge/Hardware-Rockchip_RK3588_ARM64-6366f1?style=for-the-badge)](https://www.backabuddy.co.za/campaign/digital-public-infrastructure)
